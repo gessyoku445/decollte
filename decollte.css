@@ -257,18 +257,27 @@ h3 {
 }
 
 .variationBox__subImg {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 5px;
     width: 100%;
     margin-top: 5px;
 }
 
 .variationBox__subImg img {
-    width: calc((100% - 16px) / 3);
+    width: calc((100% - 10px) / 3) !important;
     height: auto;
     border-radius: 6px;
+    margin-right: 5px;
+}
+
+.variationBox__subImg img:last-of-type {
+    margin-right: 0;
+}
+
+.variationBox__subImg .slick-track {
+    transform: unset !important;
+}
+
+.variationBox__subImg .slick-current {
+    opacity: 0.5 !important;
 }
 
 .campaignBox {
@@ -450,7 +459,9 @@ h3 {
 }
 
 .chapelphotoPlan__carouselBox {
-    margin-top: 30px;
+    width: 333px;
+    margin: 30px auto 0;
+    padding-bottom: 20px;
 }
 
 .chapelphotoPlan__about2 {
@@ -463,7 +474,6 @@ h3 {
     gap: 10px;
     width: 100%;
     box-sizing: border-box;
-    padding: 0 30px;
 }
 
 .planItem {
@@ -488,34 +498,30 @@ h3 {
     top: 25%;
 }
 
-.planItem__box2 {
-    display: flex;
-    flex-flow: column;
-    gap: 10px;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0 30px;
+.slick-slide {
+    height: fit-content !important;
 }
 
-.carousel-buttom {
-    width: 35px;
-    margin: 0 auto;
-    padding-bottom: 15px;
-    display: flex;
-    justify-content: space-between;
+.chapelphotoPlan__about2 .slick-dots li button {
+    padding-top: 25px !important;
 }
 
-.button-left,
-.button-right {
-    width: 7px;
-    height: 7px;
-    border: 1px solid #b59835;
-    border-radius: 100%;
+.chapelphotoPlan__about2 .slick-dots li button:before {
+    content: '' !important;
+    width: 7px !important;
+    height: 7px !important;
+    border: 1px solid #b59835 !important;
+    border-radius: 100% !important;
+    top: auto !important;
+    bottom: 0 !important;
+    left: 50% !important;
 }
 
-.button-active {
-    background-color: #b59835;
+.chapelphotoPlan__about2 .slick-dots li.slick-active button:before {
+    opacity: 1 !important;
+    background-color: #b59835 !important;
 }
+
 
 .planBox {
     margin: 55px 0;
@@ -615,20 +621,44 @@ h3 {
 }
 
 .galleryBox__subImg {
+    display: flex !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
     margin-top: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 5px;
-    width: 100%;
+    width: 100vw;
 }
 
 .galleryBox__subImg img {
-    width: calc((100% - 25px) / 6);
-    aspect-ratio: 1/1;
+    width: 55px !important;
+    aspect-ratio: 1/1 !important;
     object-fit: cover;
     border-radius: 6px;
 }
+
+.galleryBox__subImg img {
+    margin-right: 5px;
+}
+
+.galleryBox__subImg img:last-of-type {
+    margin-right: 0;
+}
+
+.galleryBox__subImg .slick-track {
+    transform: unset !important;
+}
+
+.galleryBox__subImg .slick-current {
+    opacity: 0.5 !important;
+}
+
+/* サムネイルを三段にするコードを入力 */
+
+
+
+
+
+
+
 
 .locationBox {
     position: relative;
@@ -674,9 +704,30 @@ h3 {
     border-radius: 0 60px 0 60px;
 }
 
+.chapelLocation__img .slick-dots li button {
+    padding-top: 10px !important;
+}
+
+.chapelLocation__img .slick-dots li button:before {
+    content: '' !important;
+    width: 7px !important;
+    height: 7px !important;
+    border: 1px solid #3E4841 !important;
+    border-radius: 100% !important;
+    top: auto !important;
+    bottom: 0 !important;
+    left: 50% !important;
+}
+
+.chapelLocation__img .slick-dots li.slick-active button:before {
+    opacity: 1 !important;
+    background-color: #3E4841 !important;
+}
+
 .chapelLocation__about {
     position: relative;
-    margin: 20px auto 0;
+    margin: 0 auto;
+    padding-top: 7px;
     width: 333px;
 }
 

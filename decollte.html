@@ -10,6 +10,16 @@
         <meta name="description"
             content="名古屋でお花に囲まれたチャペルウェディング！花々に包まれたチャペルウェディングを実現しませんか？完全貸切の空間には、美しいフラワーチャペルや、爽やかなグリーンに囲まれた落ち着きのあるインナーガーデンなど、多彩な撮影スタジオが揃っています。">
         <meta name="keywords" content="名古屋, チャペル, ウェディング, フォトウェディング, 前撮り, 花, チャペルフォトスタジオ, スタジオ8">
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <!-- Add the slick-theme.css if you want default styling -->
+        <link rel="stylesheet" type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+        <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+            integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     </head>
 
     <body>
@@ -206,7 +216,22 @@
                     <img src="decollte-image/sub_variation_02.png">
                     <img src="decollte-image/sub_variation_03.png">
                 </div>
+
+                <script>$(".variationBox__img").slick({
+                        autoplay: true,
+                        arrows: false,
+                        fade: true,
+                        speed: 1000,
+                        asNavFor: ".variationBox__subImg",
+                    });
+                    $(".variationBox__subImg").slick({
+                        slidesToShow: 3,
+                        asNavFor: ".variationBox__img",
+                        focusOnSelect: true,
+                    });</script>
+
             </div>
+
             <div class="campaignBox">
                 <div class="campaignBox__olive">
                     <img src="decollte-image/olive.svg">
@@ -311,7 +336,7 @@
                                     <p>ヘアメイクアテンド</p>
                                 </div>
                             </div>
-                            <div class="planItem__box2">
+                            <div class="planItem__box">
                                 <div class="planItem">
                                     <p>施設使用料</p>
                                 </div>
@@ -333,10 +358,13 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-buttom">
-                        <div class="button-left"></div>
-                        <div class="button-right"></div>
+
+                        <script>$(".chapelphotoPlan__about2").slick({
+                                autoplay: false,
+                                arrows: false,
+                                dots: true,
+                            });</script>
+
                     </div>
                     <div class="border"></div>
                 </div>
@@ -515,6 +543,20 @@
                         <img src="decollte-image/sp_gallery_main_12.png">
                         <img src="decollte-image/sp_gallery_main_13.png">
                     </div>
+
+                    <!-- <script>$(".galleryBox__img").slick({
+                            autoplay: true,
+                            arrows: false,
+                            fade: true,
+                            speed: 1000,
+                            asNavFor: ".galleryBox__subImg",
+                        });
+                        $(".galleryBox__subImg").slick({
+                            slidesToShow: 6,
+                            asNavFor: ".galleryBox__img",
+                            focusOnSelect: true,
+                        });</script> -->
+
                 </div>
             </div>
             <div class="reservationButton">
@@ -572,10 +614,19 @@
                 <div class="chapelLocation">
                     <div cclass="chapelLocation__carouselBox">
                         <div class="chapelLocation__img">
-                            <img src="decollte-image/location_creston_hotel_01.png">
-                            <img src="decollte-image/location_creston_hotel_02.png">
-                            <img src="decollte-image/location_creston_hotel_03.png">
+                            <img src="decollte-image/location_garden_palace_04.png">
+                            <img src="decollte-image/location_garden_palace_05.png">
+                            <img src="decollte-image/location_garden_palace_06.png">
                         </div>
+
+                        <script>$(".chapelLocation__img").slick({
+                                autoplay: true,
+                                arrows: false,
+                                fade: true,
+                                speed: 1000,
+                                dots: true,
+                            });</script>
+
                     </div>
                     <div class="chapelLocation__about">
                         <div class="chapelLocation__olive">
