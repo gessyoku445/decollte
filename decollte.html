@@ -10,16 +10,15 @@
         <meta name="description"
             content="名古屋でお花に囲まれたチャペルウェディング！花々に包まれたチャペルウェディングを実現しませんか？完全貸切の空間には、美しいフラワーチャペルや、爽やかなグリーンに囲まれた落ち着きのあるインナーガーデンなど、多彩な撮影スタジオが揃っています。">
         <meta name="keywords" content="名古屋, チャペル, ウェディング, フォトウェディング, 前撮り, 花, チャペルフォトスタジオ, スタジオ8">
-        <!-- Add the slick-theme.css if you want default styling -->
-        <link rel="stylesheet" type="text/css"
-            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-        <!-- Add the slick-theme.css if you want default styling -->
-        <link rel="stylesheet" type="text/css"
-            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
         <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
             integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
         <script type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <link rel="stylesheet" type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+        <script src="https://unpkg.com/scrollreveal"></script>
     </head>
 
     <body>
@@ -95,7 +94,9 @@
         <div class="pointBox">
             <div class="pointBox__background"></div>
             <div class="point">
-                <img src="decollte-image/sp_point_01.png">
+                <div class="fadeIn">
+                    <img src="decollte-image/sp_point_01.png">
+                </div>
                 <div class="point__about">
                     <div class="olive1">
                         <img src="decollte-image/olive.svg">
@@ -117,7 +118,9 @@
                 </div>
             </div>
             <div class="point">
-                <img src="decollte-image/sp_point_02.png">
+                <div class="fadeIn">
+                    <img src="decollte-image/sp_point_02.png">
+                </div>
                 <div class="point__about">
                     <div class="olive2">
                         <img src="decollte-image/olive2.svg">
@@ -139,7 +142,9 @@
                 </div>
             </div>
             <div class="point">
-                <img src="decollte-image/sp_point_03.png">
+                <div class="fadeIn">
+                    <img src="decollte-image/sp_point_03.png">
+                </div>
                 <div class="point__about">
                     <div class="olive1">
                         <img src="decollte-image/olive.svg">
@@ -161,7 +166,9 @@
                 </div>
             </div>
             <div class="point">
-                <img src="decollte-image/sp_point_04.png">
+                <div class="fadeIn">
+                    <img src="decollte-image/sp_point_04.png">
+                </div>
                 <div class="point__about">
                     <div class="olive2">
                         <img src="decollte-image/olive2.svg">
@@ -216,184 +223,171 @@
                     <img src="decollte-image/sub_variation_02.png">
                     <img src="decollte-image/sub_variation_03.png">
                 </div>
-
-                <script>$(".variationBox__img").slick({
-                        autoplay: true,
-                        arrows: false,
-                        fade: true,
-                        speed: 1000,
-                        asNavFor: ".variationBox__subImg",
-                    });
-                    $(".variationBox__subImg").slick({
-                        slidesToShow: 3,
-                        asNavFor: ".variationBox__img",
-                        focusOnSelect: true,
-                    });</script>
-
             </div>
-
-            <div class="campaignBox">
-                <div class="campaignBox__olive">
-                    <img src="decollte-image/olive.svg">
+        </div>
+        <div class="campaignBox">
+            <div class="campaignBox__olive">
+                <img src="decollte-image/olive.svg">
+            </div>
+            <div class="sectionTitle">
+                <h2>
+                    <div class="sectionTitle__title">
+                        CAMPAIGN
+                    </div>
+                </h2>
+                <div class="sectionTitle__subTitle">
+                    今だけ！リニューアルを記念して、期間限定キャンペーン開催中
                 </div>
-                <div class="sectionTitle">
-                    <h2>
-                        <div class="sectionTitle__title">
-                            CAMPAIGN
-                        </div>
-                    </h2>
-                    <div class="sectionTitle__subTitle">
-                        今だけ！リニューアルを記念して、期間限定キャンペーン開催中
+            </div>
+            <div class="benefitsBox">
+                <img src="decollte-image/benefits.png">
+            </div>
+            <div class="benefitsBox__about">
+                <div class="benefits">
+                    <div class="benefits__text">
+                        <p>チャペルスタジオ撮影の方</p>
+                        <div class="fee">22,000円OFF</div>
                     </div>
+                    <div class="border"></div>
                 </div>
-                <div class="benefitsBox">
-                    <img src="decollte-image/benefits.png">
+                <div class="benefits">
+                    <div class="benefits__text">
+                        <p>２着目衣装</p>
+                        <p><span>
+                                無料
+                            </span></p>
+                    </div>
+                    <div class="border"></div>
                 </div>
-                <div class="benefitsBox__about">
-                    <div class="benefits">
-                        <div class="benefits__text">
-                            <p>チャペルスタジオ撮影の方</p>
-                            <div class="fee">22,000円OFF</div>
-                        </div>
-                        <div class="border"></div>
-                    </div>
-                    <div class="benefits">
-                        <div class="benefits__text">
-                            <p>２着目衣装</p>
-                            <p><span>
-                                    無料
-                                </span></p>
-                        </div>
-                        <div class="border"></div>
-                    </div>
-                    <div class="benefits">
-                        <div class="benefits__text">
-                            <p>チャペルスタジオ</p>
-                            <p>50カット<span>追加撮影</span></p>
-                        </div>
-                        <div class="border"></div>
-                    </div>
-                </div>
-                <div class="chapelphotoPlan">
-                    <img src="decollte-image/sp_chapel_photo_plan.png">
-                    <div class="chapelphotoPlan__about1">
-                        <div class="chapelphotoPlan__title">
-                            チャペルフォトプラン
-                        </div>
-                        <div class="chapelphotoPlan__benefits">
-                            写真全データ150カット以上付き
-                        </div>
-                        <div class="chapelphotoPlan__feeBefore">
-                            95,000円（税込104,500円）
-                            <div class="chapelphotoPlan__feeErase">
-                                <div class="border1"></div>
-                                <div class="border2"></div>
-                            </div>
-                        </div>
-                        <div class="chapelphotoPlan__feeAfter">
-                            <div class="taxFree">
-                                95,000
-                            </div>
-                            <div class="en">
-                                円
-                            </div>
-                            <div class="taxIncluded">
-                                （税込104,500円）
-                            </div>
-                        </div>
-                        <div class="chapelphotoPlan__text">
-                            <p>
-                                リニューアルしたチャペルスタジオでのウェディングフォト撮影プラン。
-                            </p>
-                            <p>
-                                完全貸切で、挙式風のシーンやご家族と一緒の撮影など、おふたりに合わせた特別な時間を提供します。
-                            </p>
-                        </div>
-                    </div>
-                    <div class="chapelphotoPlan__carouselBox">
-                        <div class="chapelphotoPlan__about2">
-                            <div class="planItem__box">
-                                <div class="planItem">
-                                    <p>ウェディングドレス＆</p>
-                                    <p>タキシード（スタンダード）</p>
-                                </div>
-                                <div class="planItem">
-                                    <p>ブーケ / ブーケトニア</p>
-                                </div>
-                                <div class="planItem">
-                                    <p>ドレス補正</p>
-                                </div>
-                                <div class="planItem">
-                                    <p>アクセサリー（洋装）</p>
-                                </div>
-                                <div class="planItem">
-                                    <p>新婦ヘアメイク（洋装）</p>
-                                </div>
-                                <div class="planItem">
-                                    <p>写真撮影</p>
-                                </div>
-                                <div class="planItem">
-                                    <p>ヘアメイクアテンド</p>
-                                </div>
-                            </div>
-                            <div class="planItem__box">
-                                <div class="planItem">
-                                    <p>施設使用料</p>
-                                </div>
-                                <div class="planItem">
-                                    <p>台紙写真１冊</p>
-                                </div>
-                                <div class="planItem">
-                                    <p>写真セレクト</p>
-                                </div>
-                                <div class="planItem">
-                                    <p>写真全データ</p>
-                                    <p>（150カット以上）</p>
-                                </div>
-                                <div class="planItem">
-                                    <p>小物一式</p>
-                                </div>
-                                <div class="planItem">
-                                    <p>結婚証明書</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <script>$(".chapelphotoPlan__about2").slick({
-                                autoplay: false,
-                                arrows: false,
-                                dots: true,
-                            });</script>
-
+                <div class="benefits">
+                    <div class="benefits__text">
+                        <p>チャペルスタジオ</p>
+                        <p>50カット<span>追加撮影</span></p>
                     </div>
                     <div class="border"></div>
                 </div>
             </div>
-            <div class="reservationButton">
-                <div class="reservationButton__comment">
-                    <span>当日予約</span>もOK！
-                </div>
-                <div class="visitButton">
-                    <p>来店相談予約する</p>
-                </div>
-                <div class="onlineButton">
-                    <p>オンライン相談予約する</p>
-                </div>
-            </div>
-            <div class="planBox">
-                <div class="sectionTitle">
-                    <h2>
-                        <div class="sectionTitle__title">
-                            PLAN
+            <div class="chapelphotoPlan">
+                <img src="decollte-image/sp_chapel_photo_plan.png">
+                <div class="chapelphotoPlan__about1">
+                    <div class="chapelphotoPlan__title">
+                        チャペルフォトプラン
+                    </div>
+                    <div class="chapelphotoPlan__benefits">
+                        写真全データ150カット以上付き
+                    </div>
+                    <div class="chapelphotoPlan__feeBefore">
+                        95,000円（税込104,500円）
+                        <div class="chapelphotoPlan__feeErase">
+                            <div class="border1"></div>
+                            <div class="border2"></div>
                         </div>
-                    </h2>
-                    <div class="sectionTitle__subTitle">
-                        おすすめ！4つのプラン
+                    </div>
+                    <div class="chapelphotoPlan__feeAfter">
+                        <div class="taxFree">
+                            95,000
+                        </div>
+                        <div class="en">
+                            円
+                        </div>
+                        <div class="taxIncluded">
+                            （税込104,500円）
+                        </div>
+                    </div>
+                    <div class="chapelphotoPlan__text">
+                        <p>
+                            リニューアルしたチャペルスタジオでのウェディングフォト撮影プラン。
+                        </p>
+                        <p>
+                            完全貸切で、挙式風のシーンやご家族と一緒の撮影など、おふたりに合わせた特別な時間を提供します。
+                        </p>
                     </div>
                 </div>
-                <div class="planBox__about">
-                    <div class="planBox__item">
-                        <img src="decollte-image/sp_plan_1.png">
+                <div class="chapelphotoPlan__carouselBox">
+                    <div class="chapelphotoPlan__about2">
+                        <div class="planItem__box">
+                            <div class="planItem">
+                                <p>ウェディングドレス＆</p>
+                                <p>タキシード（スタンダード）</p>
+                            </div>
+                            <div class="planItem">
+                                <p>ブーケ / ブーケトニア</p>
+                            </div>
+                            <div class="planItem">
+                                <p>ドレス補正</p>
+                            </div>
+                            <div class="planItem">
+                                <p>アクセサリー（洋装）</p>
+                            </div>
+                            <div class="planItem">
+                                <p>新婦ヘアメイク（洋装）</p>
+                            </div>
+                            <div class="planItem">
+                                <p>写真撮影</p>
+                            </div>
+                            <div class="planItem">
+                                <p>ヘアメイクアテンド</p>
+                            </div>
+                        </div>
+                        <div class="planItem__box">
+                            <div class="planItem">
+                                <p>施設使用料</p>
+                            </div>
+                            <div class="planItem">
+                                <p>台紙写真１冊</p>
+                            </div>
+                            <div class="planItem">
+                                <p>写真セレクト</p>
+                            </div>
+                            <div class="planItem">
+                                <p>写真全データ</p>
+                                <p>（150カット以上）</p>
+                            </div>
+                            <div class="planItem">
+                                <p>小物一式</p>
+                            </div>
+                            <div class="planItem">
+                                <p>結婚証明書</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script>$(".chapelphotoPlan__about2").slick({
+                            autoplay: false,
+                            arrows: false,
+                            dots: true,
+                        });</script>
+
+                </div>
+                <div class="border"></div>
+            </div>
+        </div>
+        <div class="reservationButton">
+            <div class="reservationButton__comment">
+                <span>当日予約</span>もOK！
+            </div>
+            <div class="visitButton">
+                <p>来店相談予約する</p>
+            </div>
+            <div class="onlineButton">
+                <p>オンライン相談予約する</p>
+            </div>
+        </div>
+        <div class="planBox">
+            <div class="sectionTitle">
+                <h2>
+                    <div class="sectionTitle__title">
+                        PLAN
+                    </div>
+                </h2>
+                <div class="sectionTitle__subTitle">
+                    おすすめ！4つのプラン
+                </div>
+            </div>
+            <div class="planBox__about">
+                <div class="planBox__item">
+                    <img src="decollte-image/sp_plan_1.png">
+                    <div class="scrollUp">
                         <div class="plan__title">
                             <h3>チャペルフォト</h3>
                         </div>
@@ -416,8 +410,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="planBox__item">
-                        <img src="decollte-image/sp_plan_2.png">
+                </div>
+                <div class="planBox__item">
+                    <img src="decollte-image/sp_plan_2.png">
+                    <div class="scrollUp">
                         <div class="plan__title">
                             <h3>チャペルフォト/2着プラン</h3>
                         </div>
@@ -440,8 +436,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="planBox__item">
-                        <img src="decollte-image/sp_plan_3.png">
+                </div>
+                <div class="planBox__item">
+                    <img src="decollte-image/sp_plan_3.png">
+                    <div class="scrollUp">
                         <div class="plan__title">
                             <h3>写真で挙げる結婚式</h3>
                         </div>
@@ -464,8 +462,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="planBox__item">
-                        <img src="decollte-image/sp_plan_4.png">
+                </div>
+                <div class="planBox__item">
+                    <img src="decollte-image/sp_plan_4.png">
+                    <div class="scrollUp">
                         <div class="plan__title">
                             <h3>チャペル＆和装ハウススタジオ</h3>
                         </div>
@@ -490,6 +490,142 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="reservationButton">
+            <div class="reservationButton__comment">
+                <span>当日予約</span>もOK！
+            </div>
+            <div class="visitButton">
+                <p>来店相談予約する</p>
+            </div>
+            <div class="onlineButton">
+                <p>オンライン相談予約する</p>
+            </div>
+        </div>
+        <div class="galleryBox">
+            <div class="sectionTitle">
+                <h2>
+                    <div class="sectionTitle__title">
+                        GALLERY
+                    </div>
+                </h2>
+                <div class="sectionTitle__subTitle">
+                    ギャラリー
+                </div>
+            </div>
+            <div class="gallery__carouselBox">
+                <div class="galleryBox__img">
+                    <img src="decollte-image/sp_gallery_main_01.png">
+                    <img src="decollte-image/sp_gallery_main_02.png">
+                    <img src="decollte-image/sp_gallery_main_03.png">
+                    <img src="decollte-image/sp_gallery_main_04.png">
+                    <img src="decollte-image/sp_gallery_main_05.png">
+                    <img src="decollte-image/sp_gallery_main_06.png">
+                    <img src="decollte-image/sp_gallery_main_07.png">
+                    <img src="decollte-image/sp_gallery_main_08.png">
+                    <img src="decollte-image/sp_gallery_main_09.png">
+                    <img src="decollte-image/sp_gallery_main_10.png">
+                    <img src="decollte-image/sp_gallery_main_11.png">
+                    <img src="decollte-image/sp_gallery_main_12.png">
+                    <img src="decollte-image/sp_gallery_main_13.png">
+                </div>
+                <div class="galleryBox__subImg">
+                    <img src="decollte-image/sp_gallery_main_01.png">
+                    <img src="decollte-image/sp_gallery_main_02.png">
+                    <img src="decollte-image/sp_gallery_main_03.png">
+                    <img src="decollte-image/sp_gallery_main_04.png">
+                    <img src="decollte-image/sp_gallery_main_05.png">
+                    <img src="decollte-image/sp_gallery_main_06.png">
+                    <img src="decollte-image/sp_gallery_main_07.png">
+                    <img src="decollte-image/sp_gallery_main_08.png">
+                    <img src="decollte-image/sp_gallery_main_09.png">
+                    <img src="decollte-image/sp_gallery_main_10.png">
+                    <img src="decollte-image/sp_gallery_main_11.png">
+                    <img src="decollte-image/sp_gallery_main_12.png">
+                    <img src="decollte-image/sp_gallery_main_13.png">
+                </div>
+            </div>
+        </div>
+        <div class="reservationButton">
+            <div class="reservationButton__comment">
+                <span>当日予約</span>もOK！
+            </div>
+            <div class="visitButton">
+                <p>来店相談予約する</p>
+            </div>
+            <div class="onlineButton">
+                <p>オンライン相談予約する</p>
+            </div>
+        </div>
+        <div class="locationBox">
+            <div class="locationBox__border"></div>
+            <div class="sectionTitle">
+                <h2>
+                    <div class="sectionTitle__title">
+                        LOCATION
+                    </div>
+                </h2>
+                <div class="sectionTitle__subTitle">
+                    ロケーションチャペル
+                </div>
+                <div class="sectionTitle__subTitle2">
+                    実際の挙式会場で撮影ができるプランもご用意しております
+                </div>
+            </div>
+            <div class="chapelLocation">
+                <div cclass="chapelLocation__carouselBox">
+                    <div class="chapelLocation__img">
+                        <img src="decollte-image/location_creston_hotel_01.png">
+                        <img src="decollte-image/location_creston_hotel_02.png">
+                        <img src="decollte-image/location_creston_hotel_03.png">
+                    </div>
+                </div>
+                <div class="chapelLocation__about">
+                    <div class="chapelLocation__olive">
+                        <img src="decollte-image/olive.svg">
+                    </div>
+                    <div class="chapelLocation__title">
+                        <h3>クレストンホテル</h3>
+                        <h3>チャペルロケーション</h3>
+                    </div>
+                    <div class="chapelLocation__text">
+                        <p>まるで海外のような木のぬくもり感じるチャペルャペルでの撮影プラン。</p>
+                        <p>緑豊かな風を感じる開放感あふれるガーデンが広がります。</p>
+                        <p>ご家族様もぜひご一緒に。</p>
+                    </div>
+                    <div class="chapelLocation__button">
+                        このスポットのプランを見る
+                    </div>
+                </div>
+            </div>
+            <div class="chapelLocation">
+                <div cclass="chapelLocation__carouselBox">
+                    <div class="chapelLocation__img">
+                        <img src="decollte-image/location_garden_palace_04.png">
+                        <img src="decollte-image/location_garden_palace_05.png">
+                        <img src="decollte-image/location_garden_palace_06.png">
+                    </div>
+                </div>
+                <div class="chapelLocation__about">
+                    <div class="chapelLocation__olive">
+                        <img src="decollte-image/olive.svg">
+                    </div>
+                    <div class="chapelLocation__title">
+                        <h3>ガーデンパレス</h3>
+                        <h3>チャペルロケーション</h3>
+                    </div>
+                    <div class="chapelLocation__text">
+                        <p>木の温かみ豊かなぬくもりがあるチャペルでの撮影プラン。</p>
+                        <p>結婚式を挙げる予定がない方も、チャペル挙式の雰囲気をお楽しみいただけます。</p>
+                        <p>ご家族様もぜひご一緒に。</p>
+                    </div>
+                    <div class="chapelLocation__button">
+                        このスポットのプランを見る
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lastReservationButton">
             <div class="reservationButton">
                 <div class="reservationButton__comment">
                     <span>当日予約</span>もOK！
@@ -501,163 +637,74 @@
                     <p>オンライン相談予約する</p>
                 </div>
             </div>
-            <div class="galleryBox">
-                <div class="sectionTitle">
-                    <h2>
-                        <div class="sectionTitle__title">
-                            GALLERY
-                        </div>
-                    </h2>
-                    <div class="sectionTitle__subTitle">
-                        ギャラリー
-                    </div>
-                </div>
-                <div class="gallery__carouselBox">
-                    <div class="galleryBox__img">
-                        <img src="decollte-image/sp_gallery_main_01.png">
-                        <img src="decollte-image/sp_gallery_main_02.png">
-                        <img src="decollte-image/sp_gallery_main_03.png">
-                        <img src="decollte-image/sp_gallery_main_04.png">
-                        <img src="decollte-image/sp_gallery_main_05.png">
-                        <img src="decollte-image/sp_gallery_main_06.png">
-                        <img src="decollte-image/sp_gallery_main_07.png">
-                        <img src="decollte-image/sp_gallery_main_08.png">
-                        <img src="decollte-image/sp_gallery_main_09.png">
-                        <img src="decollte-image/sp_gallery_main_10.png">
-                        <img src="decollte-image/sp_gallery_main_11.png">
-                        <img src="decollte-image/sp_gallery_main_12.png">
-                        <img src="decollte-image/sp_gallery_main_13.png">
-                    </div>
-                    <div class="galleryBox__subImg">
-                        <img src="decollte-image/sp_gallery_main_01.png">
-                        <img src="decollte-image/sp_gallery_main_02.png">
-                        <img src="decollte-image/sp_gallery_main_03.png">
-                        <img src="decollte-image/sp_gallery_main_04.png">
-                        <img src="decollte-image/sp_gallery_main_05.png">
-                        <img src="decollte-image/sp_gallery_main_06.png">
-                        <img src="decollte-image/sp_gallery_main_07.png">
-                        <img src="decollte-image/sp_gallery_main_08.png">
-                        <img src="decollte-image/sp_gallery_main_09.png">
-                        <img src="decollte-image/sp_gallery_main_10.png">
-                        <img src="decollte-image/sp_gallery_main_11.png">
-                        <img src="decollte-image/sp_gallery_main_12.png">
-                        <img src="decollte-image/sp_gallery_main_13.png">
-                    </div>
+        </div>
 
-                    <!-- <script>$(".galleryBox__img").slick({
-                            autoplay: true,
-                            arrows: false,
-                            fade: true,
-                            speed: 1000,
-                            asNavFor: ".galleryBox__subImg",
-                        });
-                        $(".galleryBox__subImg").slick({
-                            slidesToShow: 6,
-                            asNavFor: ".galleryBox__img",
-                            focusOnSelect: true,
-                        });</script> -->
+        <script>
+            ScrollReveal().reveal('.fadeIn', {
+                duration: 1000,
+                viewFactor: 0.3,
+            });
+        </script>
 
-                </div>
-            </div>
-            <div class="reservationButton">
-                <div class="reservationButton__comment">
-                    <span>当日予約</span>もOK！
-                </div>
-                <div class="visitButton">
-                    <p>来店相談予約する</p>
-                </div>
-                <div class="onlineButton">
-                    <p>オンライン相談予約する</p>
-                </div>
-            </div>
-            <div class="locationBox">
-                <div class="locationBox__border"></div>
-                <div class="sectionTitle">
-                    <h2>
-                        <div class="sectionTitle__title">
-                            LOCATION
-                        </div>
-                    </h2>
-                    <div class="sectionTitle__subTitle">
-                        ロケーションチャペル
-                    </div>
-                    <div class="sectionTitle__subTitle2">
-                        実際の挙式会場で撮影ができるプランもご用意しております
-                    </div>
-                </div>
-                <div class="chapelLocation">
-                    <div cclass="chapelLocation__carouselBox">
-                        <div class="chapelLocation__img">
-                            <img src="decollte-image/location_creston_hotel_01.png">
-                            <img src="decollte-image/location_creston_hotel_02.png">
-                            <img src="decollte-image/location_creston_hotel_03.png">
-                        </div>
-                    </div>
-                    <div class="chapelLocation__about">
-                        <div class="chapelLocation__olive">
-                            <img src="decollte-image/olive.svg">
-                        </div>
-                        <div class="chapelLocation__title">
-                            <h3>クレストンホテル</h3>
-                            <h3>チャペルロケーション</h3>
-                        </div>
-                        <div class="chapelLocation__text">
-                            <p>まるで海外のような木のぬくもり感じるチャペルャペルでの撮影プラン。</p>
-                            <p>緑豊かな風を感じる開放感あふれるガーデンが広がります。</p>
-                            <p>ご家族様もぜひご一緒に。</p>
-                        </div>
-                        <div class="chapelLocation__button">
-                            このスポットのプランを見る
-                        </div>
-                    </div>
-                </div>
-                <div class="chapelLocation">
-                    <div cclass="chapelLocation__carouselBox">
-                        <div class="chapelLocation__img">
-                            <img src="decollte-image/location_garden_palace_04.png">
-                            <img src="decollte-image/location_garden_palace_05.png">
-                            <img src="decollte-image/location_garden_palace_06.png">
-                        </div>
+        <script>$(".variationBox__img").slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                pauseOnHover: false,
+                arrows: false,
+                fade: true,
+                speed: 1000,
+                asNavFor: ".variationBox__subImg",
+            });
+            $(".variationBox__subImg").slick({
+                slidesToShow: 3,
+                asNavFor: ".variationBox__img",
+                focusOnSelect: true,
+            });
+        </script>
 
-                        <script>$(".chapelLocation__img").slick({
-                                autoplay: true,
-                                arrows: false,
-                                fade: true,
-                                speed: 1000,
-                                dots: true,
-                            });</script>
+        <script>
+            ScrollReveal().reveal('.scrollUp', {
+                origin: 'bottom',
+                distance: '50px',
+                duration: 1000,
+                viewFactor: 0.5,
+            });
+        </script>
 
-                    </div>
-                    <div class="chapelLocation__about">
-                        <div class="chapelLocation__olive">
-                            <img src="decollte-image/olive.svg">
-                        </div>
-                        <div class="chapelLocation__title">
-                            <h3>ガーデンパレス</h3>
-                            <h3>チャペルロケーション</h3>
-                        </div>
-                        <div class="chapelLocation__text">
-                            <p>木の温かみ豊かなぬくもりがあるチャペルでの撮影プラン。</p>
-                            <p>結婚式を挙げる予定がない方も、チャペル挙式の雰囲気をお楽しみいただけます。</p>
-                            <p>ご家族様もぜひご一緒に。</p>
-                        </div>
-                        <div class="chapelLocation__button">
-                            このスポットのプランを見る
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="reservationButton">
-                <div class="reservationButton__comment">
-                    <span>当日予約</span>もOK！
-                </div>
-                <div class="visitButton">
-                    <p>来店相談予約する</p>
-                </div>
-                <div class="onlineButton">
-                    <p>オンライン相談予約する</p>
-                </div>
-            </div>
+        <script>
+            ScrollReveal().reveal('.reservationButton', {
+                duration: 1000,
+                scale: 0.1,
+                reset: true,
+                viewFactor: 0.3
+            });
+        </script>
+
+        <script>$(".galleryBox__img").slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+                fade: true,
+                speed: 1000,
+                asNavFor: ".galleryBox__subImg",
+            });
+            $(".galleryBox__subImg").slick({
+                slidesToShow: 13,
+                asNavFor: ".galleryBox__img",
+                focusOnSelect: true,
+            });
+        </script>
+
+        <script>$(".chapelLocation__img").slick({
+                autoplay: true,
+                autoplaySpeed: 2250,
+                pauseOnHover: false,
+                arrows: false,
+                fade: true,
+                speed: 1000,
+                dots: true,
+            });
+        </script>
     </body>
 
     </html>
