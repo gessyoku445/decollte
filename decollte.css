@@ -1,7 +1,7 @@
 body {
     width: 100%;
     margin: 0;
-    color: #0B0B0B;
+    color: #121212;
     font-family: 游明朝体, YuMincho, 游明朝, "Yu Mincho", serif;
     line-height: 1.5;
     -webkit-text-size-adjust: 100%;
@@ -25,59 +25,54 @@ h2 {
 
 h3 {
     margin: 0;
-    font-weight: normal;
-    font-size: 20px;
+    font-weight: bold;
+    font-size: 18px;
 }
 
-.main-visual {
-    box-sizing: content-box;
+.mainVisual {
     width: 100%;
 }
 
-.main-visual img {
+.mainVisual img {
     width: 100%;
     height: auto;
 }
 
-.flower-chapel {
+.flowerChapel {
     position: relative;
     width: 100%;
 }
 
-.flower-chapel img {
+.flowerChapel img {
     width: 100%;
     height: auto;
 }
 
-.flower-chapel-textbox {
+.flowerChapel__textbox {
+    position: absolute;
     display: flex;
     flex-flow: column;
     gap: 40px;
-    position: absolute;
-    top: 49%;
-    right: 0;
-    left: 0;
+    top: 50%;
     margin: 0 25px;
-    width: auto;
     text-align: center;
 }
 
-.flower-chapel-textbox img {
+.flowerChapel-textbox img {
     width: 90%;
     height: auto;
 }
 
-.flower-chapel-text {
+.flowerChapel__text {
     display: grid;
     row-gap: 20px;
 }
 
-.menu-box {
+.menuBox {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    width: 100%;
     padding: 0 20px;
     box-sizing: border-box;
     margin-top: 55px;
@@ -94,6 +89,7 @@ h3 {
     height: 70px;
     border: 1px solid #C0C0C0;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 .menu::before {
@@ -106,20 +102,20 @@ h3 {
     bottom: 5px;
 }
 
-.menu-subtitle {
+.menu__subTitle {
     font-size: 10px;
 }
 
-.point-box {
+.pointBox {
     display: flex;
     flex-flow: column;
     position: relative;
-    width: 100%;
     margin-top: 55px;
+    margin-bottom: 115px;
     gap: 40px;
 }
 
-.point-background {
+.pointBox__background {
     position: absolute;
     z-index: -1;
     width: 100%;
@@ -137,7 +133,7 @@ h3 {
     height: auto;
 }
 
-.point-about {
+.point__about {
     position: relative;
     margin: 20px auto 0px;
     width: 333px;
@@ -162,16 +158,16 @@ h3 {
     top: -30px;
 }
 
-.poit-number img {
+.point__number img {
     width: auto;
     height: 30px;
 }
 
-.point-title {
+.point__title {
     margin-top: 30px
 }
 
-.point-text {
+.point__text {
     display: flex;
     flex-flow: column;
     gap: 20px;
@@ -179,24 +175,23 @@ h3 {
     font-size: 14px;
 }
 
-.reservation-button {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    width: 333px;
-    margin: 115px auto 0px;
+.reservationButton {
+    width: 85%;
+    max-width: 333px;
+    margin: 0 auto;
 }
 
-.reservation-comment {
-    font-size: 18px;
+.reservationButton__comment {
+    width: fit-content;
+    font-size: 16px;
     margin: 0 auto 20px;
 }
 
-.reservation-comment span {
+.reservationButton__comment span {
     color: #A00000;
 }
 
-.visit-button {
+.visitButton {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,11 +203,12 @@ h3 {
     color: white;
 }
 
-.visit-button p {
+.visitButton p {
     font-size: 18px;
+    cursor: pointer;
 }
 
-.online-button {
+.onlineButton {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -223,62 +219,571 @@ h3 {
     margin-top: 15px;
 }
 
-.online-button p {
+.onlineButton p {
     font-size: 18px;
     color: #A00000;
+    cursor: pointer;
 }
 
-.variation {}
+.variationBox {
+    margin-top: 80px;
+}
 
-.section-title {
+.sectionTitle {
     display: flex;
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    margin-top: 80px;
+    width: 333px;
+    margin: 0 auto;
 }
 
-.title {
+.sectionTitle__title {
     font-size: 36px;
     font-weight: bold;
 }
 
-.sub-title {
-    font-size: 16px;
+.sectionTitle__subTitle {
+    font-size: 14px;
+    text-align: center;
 }
 
-.variation-img {
+.variation__carouselBox {}
+
+.variationBox__img {
     width: 100%;
     margin-top: 30px;
 }
 
-.variation-img img {
+.variationBox__img img {
     width: 100%;
-    display: none;
-    /* Hide all images initially */
+    height: auto;
 }
 
-.variation-img img:first-of-type {
-    display: block;
-    /* Show only the first image initially */
-}
-
-
-.variation-sub-img {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 5px;
+.variationBox__subImg {
     width: 100%;
     margin-top: 5px;
 }
 
-.variation-sub-img img {
-    width: calc((100% - 10px) / 3);
+.variationBox__subImg img {
+    width: calc((100% - 10px) / 3) !important;
     height: auto;
+    border-radius: 6px;
+    margin-right: 5px;
+}
+
+.variationBox__subImg img:last-of-type {
+    margin-right: 0;
+}
+
+.variationBox__subImg .slick-track {
+    transform: unset !important;
+}
+
+.variationBox__subImg .slick-current {
+    opacity: 0.5 !important;
+}
+
+.campaignBox {
+    position: relative;
+    margin-top: 120px;
+    margin-bottom: 55px;
+    padding: 40px 0 0;
+    background-color: #FEF8F3;
+}
+
+.campaignBox__olive {
+    position: absolute;
+    top: -101px;
+    right: 25px;
+    opacity: 0.1;
+    transform: rotate(-10.72deg);
+    width: 155px;
+    height: auto;
+}
+
+.campaignBox__olive img {
+    width: 100%;
+    height: auto;
+}
+
+.benefitsBox {
+    margin: 40px auto 0;
+    width: 80%;
+}
+
+.benefitsBox img {
+    width: 100%;
+    height: auto;
+}
+
+.benefitsBox__about {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+.benefits {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+    padding: 23px 5px 28px;
+}
+
+.benefits__text {
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.benefits__text span {
+    font-size: 24px;
+    color: #b59835;
+}
+
+.fee {
+    font-size: 24px;
+    color: #b59835;
+    font-family: "Yu Gothic", "YuGothic", "游ゴシック", "游ゴシック体";
+}
+
+.border {
+    position: absolute;
+    width: calc(100% - 10px);
+    height: 1px;
+    background-color: #b59835;
+    bottom: 5px;
+    left: 5px;
+}
+
+.chapelphotoPlan {
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 55px;
+    background-color: #3E4841;
+}
+
+.chapelphotoPlan img {
+    width: 100%;
+    height: auto;
+    border-radius: 0 0 0 60px;
+}
+
+.chapelphotoPlan__about1 {
+    width: 333px;
+    margin: 40px auto 0;
+}
+
+.chapelphotoPlan__title {
+    font-size: 22px;
+    color: white;
+}
+
+.chapelphotoPlan__benefits {
+    width: fit-content;
+    margin-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #3E4841;
+    padding: 5px 10px;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.chapelphotoPlan__feeBefore {
+    width: fit-content;
+    position: relative;
+    margin-top: 15px;
+    color: white;
+    font-family: "Yu Gothic", "YuGothic", "游ゴシック", "游ゴシック体";
+}
+
+.chapelphotoPlan__feeErase {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    left: -5px;
+}
+
+.chapelphotoPlan__feeErase .border1 {
+    width: calc(100% + 10px);
+    height: 1px;
+    background-color: white;
+
+}
+
+.chapelphotoPlan__feeErase .border2 {
+    margin-top: 3px;
+    width: calc(100% + 10px);
+    height: 1px;
+    background-color: white;
+}
+
+.chapelphotoPlan__feeAfter {
+    display: flex;
+    align-items: baseline;
+    font-family: "Yu Gothic", "YuGothic", "游ゴシック", "游ゴシック体";
+}
+
+.taxFree {
+    font-size: 40px;
+    background: linear-gradient(90deg, #A98D2A 0%, #C5A745 50%, #A98D2A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.en {
+    font-size: 28px;
+    color: #b59835;
+    padding-left: 5px;
+}
+
+.taxIncluded {
+    font-size: 20px;
+    color: #b59835;
+}
+
+.chapelphotoPlan__text {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    color: white;
+    margin-top: 15px;
+}
+
+.chapelphotoPlan__carouselBox {
+    width: 333px;
+    margin: 30px auto 0;
+    padding-bottom: 20px;
+}
+
+.chapelphotoPlan__about2 {
+    margin-bottom: 25px;
+}
+
+.planItem__box {
+    display: flex !important;
+    flex-flow: column;
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.planItem {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    color: white;
+    height: 42px;
+    padding-left: 30px;
+    justify-content: center;
+    text-align: left;
+}
+
+.planItem ::before {
+    position: absolute;
+    content: "";
+    border: 1px solid white;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 25%;
+}
+
+.slick-slide {
+    height: fit-content !important;
+}
+
+.chapelphotoPlan__about2 .slick-dots li button {
+    padding-top: 25px !important;
+}
+
+.chapelphotoPlan__about2 .slick-dots li button:before {
+    content: '' !important;
+    width: 7px !important;
+    height: 7px !important;
+    border: 1px solid #b59835 !important;
+    border-radius: 100% !important;
+    top: auto !important;
+    bottom: 0 !important;
+    left: 50% !important;
+}
+
+.chapelphotoPlan__about2 .slick-dots li.slick-active button:before {
+    opacity: 1 !important;
+    background-color: #b59835 !important;
+}
+
+
+.planBox {
+    margin: 55px 0;
+}
+
+.planBox__about {
+    display: flex;
+    flex-flow: column;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.planBox__item {}
+
+.planBox__item img {
+    width: 100%;
+    height: auto;
+}
+
+.scrollUp {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan__title {
+    margin-top: 15px;
+}
+
+.plan__benefits {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #fef8f3;
+    font-size: 14px;
+}
+
+.plan__feeBefore {
+    position: relative;
+    width: fit-content;
+    margin-top: 10px;
+    font-family: "Yu Gothic", "YuGothic", "游ゴシック", "游ゴシック体";
+    font-size: 16px;
+}
+
+.plan__feeErase {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: -5px;
+}
+
+.plan__feeErase .border1 {
+    width: calc(100% + 10px);
+    height: 1px;
+    background-color: #121212;
+}
+
+.plan__feeErase .border2 {
+    margin-top: 3px;
+    width: calc(100% + 10px);
+    height: 1px;
+    background-color: #121212;
+}
+
+.plan__feeAfter {
+    display: flex;
+    align-items: baseline;
+    font-family: "Yu Gothic", "YuGothic", "游ゴシック", "游ゴシック体";
+}
+
+.plan__taxFree {
+    font-size: 32px;
+    font-weight: bold;
+    color: #b59835;
+}
+
+.plan__taxIncluded {
+    padding-left: 3px;
+    font-size: 18px;
+    color: #b59835;
+}
+
+.galleryBox {
+    margin: 80px 0 55px;
+}
+
+.gallery__carouselBox {
+    margin-top: 40px;
+}
+
+.galleryBox__img {
+    width: 100%;
+}
+
+.galleryBox__img img {
+    width: 100%;
+    height: auto;
+}
+
+.galleryBox__subImg {}
+
+.galleryBox__subImg img {
+    width: 55px !important;
+    aspect-ratio: 1/1 !important;
+    object-fit: cover;
     border-radius: 6px;
 }
 
-.variation-sub-img img.active {
-    opacity: 0.5;
+.galleryBox__subImg img {
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.galleryBox__subImg img:last-of-type {
+    margin-right: 0;
+}
+
+.galleryBox__subImg .slick-track {
+    transform: unset !important;
+}
+
+.galleryBox__subImg .slick-current {
+    opacity: 0.5 !important;
+}
+
+.galleryBox__subImg .slick-track {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    padding-right: 5px !important;
+}
+
+.locationBox {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    gap: 40px;
+    margin-top: 80px;
+    margin-bottom: 55px;
+    padding: 40px 0;
+    background-color: #F1F5F2;
+}
+
+.locationBox__border {
+    position: absolute;
+    width: calc(100% - 10px);
+    height: 1px;
+    background-color: #b59835;
+    top: 5px;
+    left: 5px;
+}
+
+.sectionTitle__subTitle2 {
+    font-size: 14px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.chapelLocation {
+    background-color: #F1F5F2;
+}
+
+.chapelLocation__carouselBox {
+    width: 100%;
+}
+
+.chapelLocation__img {
+    width: 100%;
+}
+
+.chapelLocation__img img {
+    width: 100%;
+    height: auto;
+    border-radius: 0 60px 0 60px;
+}
+
+.chapelLocation__img .slick-dots li button {
+    padding-top: 10px !important;
+}
+
+.chapelLocation__img .slick-dots li button:before {
+    content: '' !important;
+    width: 7px !important;
+    height: 7px !important;
+    border: 1px solid #3E4841 !important;
+    border-radius: 100% !important;
+    top: auto !important;
+    bottom: 0 !important;
+    left: 50% !important;
+}
+
+.chapelLocation__img .slick-dots li.slick-active button:before {
+    opacity: 1 !important;
+    background-color: #3E4841 !important;
+}
+
+.chapelLocation__about {
+    position: relative;
+    margin: 0 auto;
+    padding-top: 7px;
+    width: 333px;
+}
+
+.chapelLocation__olive {
+    position: absolute;
+    top: -22px;
+    right: 5px;
+    opacity: 0.1;
+    transform: rotate(-10.72deg);
+    width: 155px;
+    height: auto;
+}
+
+.chapelLocation__olive img {
+    width: 100%;
+    height: auto;
+}
+
+.chapelLocation__title {}
+
+.chapelLocation__text {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.chapelLocation__button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 333px;
+    height: 50px;
+    background-color: #3E4841;
+    border-radius: 6px;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+}
+
+.chapelLocation__button::before {
+    content: "";
+    position: absolute;
+    background-image: url(/decollte-image/arrow_forward_ios.svg);
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+    width: 10px;
+    height: 10px;
+    top: 40%;
+    right: 5px;
+}
+
+.lastReservationButton {
+    width: 100%;
+    background-color: white;
+    margin-top: 55px;
+    padding-bottom: 55px;
 }
